@@ -1,4 +1,4 @@
-import '@docsearch/react/dist/style.css';
+import '@docsearch/css';
 import '../styles/index.css';
 import Head from 'next/head';
 

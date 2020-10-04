@@ -10,7 +10,7 @@ import { users } from 'users';
 export interface UsersProps {}
 
 const Users: React.FC<UsersProps> = props => {
-  const editUrl = `${siteConfig.repoUrl}/edit/master/website2/src/siteConfig.tsx`;
+  const editUrl = `${siteConfig.repoUrl}/edit/master/docs/src/users.ts`;
   const showcase = users.map(user => (
     <a
       href={user.infoLink}
@@ -38,7 +38,7 @@ const Users: React.FC<UsersProps> = props => {
             <p className="text-base leading-6 text-blue-600 font-semibold tracking-wide uppercase">
               Showcase
             </p>
-            <h1 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 font-semibold">
+            <h1 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
               Who's using Formik?
             </h1>
             <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
@@ -59,6 +59,7 @@ const Users: React.FC<UsersProps> = props => {
             <a
               href={editUrl}
               target="_blank"
+              rel="noopener noreferrer"
               className="button-secondary text-xl"
             >
               Add your company

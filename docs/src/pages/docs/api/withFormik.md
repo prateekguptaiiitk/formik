@@ -131,11 +131,11 @@ If this option is specified, then Formik will transfer its results into
 updatable form state and make these values available to the new component as
 `props.status`. Useful for storing or instantiating arbitrary state into your form. As a reminder, `status` will be reset to this initial value (and this function will be re-run) if the form is reset.
 
-### `mapPropsToTouched?: (props: Props) => FormikTocuhed<Values>`
+### `mapPropsToTouched?: (props: Props) => FormikTouched<Values>`
 
 If this option is specified, then Formik will transfer its results into
 updatable form state and make these values available to the new component as
-`props.errors`. Useful for instantiating arbitrary touched state (i.e. marking fields as visited) into your form. As a reminder, Formik will use this initial value (and this function will be re-run) if the form is reset.
+`props.touched`. Useful for instantiating arbitrary touched state (i.e. marking fields as visited) into your form. As a reminder, Formik will use this initial value (and this function will be re-run) if the form is reset.
 
 ### `mapPropsToValues?: (props: Props) => Values`
 
@@ -218,4 +218,4 @@ component's `errors`. Its keys should match those of `values`.
 
 ## Injected props and methods
 
-These are identical to the props of [`<Formik render={props => ...} />`](/docs/api/formik.md#formik-render-methods-and-props)
+These are identical to the props of [`<Formik render={props => ...} />`](./formik.md#formik-render-methods-and-props)
